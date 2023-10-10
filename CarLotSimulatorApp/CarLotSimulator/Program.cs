@@ -15,7 +15,8 @@ namespace CarLotSimulator
             //The methods should take one string parameter: the respective noise property
             Car myCar = new Car("Toyota", "Camry", 2004, "BRUPBRUPBRUPBRUPBRUP", "HOOOONK", true);
             parkingDeck.carsInLot.Add(myCar);
-            
+            Console.WriteLine(CarLot.numberOfCars);
+
             Car momCar = new Car()
             {
                 Make = "Volvo",
@@ -26,6 +27,7 @@ namespace CarLotSimulator
                 IsDrivable = true,
             };
             parkingDeck.carsInLot.Add(momCar);
+            Console.WriteLine(CarLot.numberOfCars);
 
             Car dadCar = new Car();
             dadCar.Make = "Lincoln";
@@ -35,7 +37,7 @@ namespace CarLotSimulator
             dadCar.HonkNoise = "BAP";
             dadCar.IsDrivable = true;
             parkingDeck.carsInLot.Add(dadCar);
-
+            Console.WriteLine(CarLot.numberOfCars);
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
